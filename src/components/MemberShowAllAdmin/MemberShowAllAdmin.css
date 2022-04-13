@@ -1,0 +1,21 @@
+.update{
+    border: 1px solid #ffcd01;
+    background-color: white;
+    color:#ffcc01 ;
+}
+.update:hover{
+    background-color: #ffcd01;
+    color: black;
+}
+
+
+.details{
+    border: 1px solid skyblue;
+    background-color: skyblue;
+    color:white ;
+}
+.details:hover{
+    background-color: blue;
+    color:white;
+
+}

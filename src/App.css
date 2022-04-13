@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/*--------------------------------------- GLOBAL DEC  */
+
+a {
+  cursor: pointer;
+}
+
+.dvf {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.dhf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width : 686px) {
+  .dvf-sm-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dhf-sm-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 991px) {
+  .pe-sm-0 {
+    padding-right: 0;
+  }
+
+  .ps-sm-0 {
+    padding-left: 0;
+  }
+
+  .mb-sm {
+    margin-bottom: 15px !important;
+  }
+
+
+}
+
+
+/* width  */
+
+.w-lg-50 {
+  width: 35%;
+}
+
+@media screen and (max-width : 686px) {
+  .w-sm-75 {
+    width: 75%;
+  }
+  .col-sm-0{
+    width: 0%;
+  }
+}
+
+@media screen and (min-width : 687px)and (max-width : 991px) {
+  .w-sm-75 {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+.fas {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sectionwidth {
+  width: 75%
+}
+
+@media screen and (max-width : 686px) {
+  .sectionwidth {
+    width: 95%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*............................ ZOOM EFFECT  */
+.zoom {
+  transition: transform .3s;
+}
+
+.zoom:hover {
+
+  background-color: white;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------  ALL BTNS  */
+
+.btn {
+  border-radius: 10px;
+  background-color: green;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: white;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  color: white;
+  background-color: rgb(3, 77, 3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------- NAVBAR */
+header {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav {
+  width: 75%;
+}
+
+.nav-link {
+  font-size: 16px;
+  margin: 0 5px;
+
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #d903ee !important;
+}
+
+
+
+#hire-me-btn img {
+  width: 5%;
+}
+
+
+
+@media screen and (max-width : 686px) {
+  nav {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  #conatct-us-btn-img {
+    width: 10%;
   }
+}
+
+.logo-img {
+  width: 5%;
+
+}
+
+.nav-text-size {
+  font-size: 16px;
+  ;
 }

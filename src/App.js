@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { MemberSignup } from './components/membersignup/MemberSignup.js';
+import { MemberSignIn } from './components/membersignin/MemberSignIn.js';
+import { MemberProfile } from './components/memberprofile/MemberProfile';
+import { MemberRequestAdmin } from './components/MemberRequestAdmin/MemberRequestAdmin';
+import { MemberShowAllAdmin } from './components/MemberShowAllAdmin/MemberShowAllAdmin.js';
+import { AddBook } from './components/AddBook/AddBook';
 
 function App() {
   return (
+
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+
+        <Routes>
+
+          <Route path='/' exact element={<AddBook/>} />
+          <Route path='/acc' exact element={<MemberShowAllAdmin/>} />
+          <Route path='/req' exact element={<MemberRequestAdmin />} />
+          <Route path='/api/member/signup' element={<MemberSignup />} />
+          <Route path='/api/member/signin' element={<MemberSignIn />} />
+          <Route path='/api/member/showProfile/:rollId' element={<MemberProfile />} />
+
+
+
+
+
+        </Routes>
+
+      </Router>
     </div>
+
+
   );
 }
 

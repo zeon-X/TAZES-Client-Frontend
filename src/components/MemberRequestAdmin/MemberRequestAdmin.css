@@ -1,0 +1,60 @@
+main {
+    text-align: left;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+@media screen and (max-width : 686px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+@media screen and (min-width : 687px) and (max-width : 740px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+@media screen and (min-width : 741px) and (max-width : 991px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+@media screen and (min-width : 992px) and (max-width : 1224px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+}
+
+
+
+a {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.accept{
+    border: 1px solid green;
+    background-color: white;
+    color:green ;
+}
+.accept:hover {
+    background-color: green;
+    color: white;
+}
+
+
+
+.delete {
+    border: 1px solid red;
+    background-color: white;
+    color:red ;
+}
+.delete:hover {
+    background-color: red;
+    color: black;
+}

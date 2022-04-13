@@ -1,0 +1,51 @@
+@media screen and (max-width : 686px) {
+    #login-page-wc-img {
+        display: none;
+    }
+
+    .padding-sm-none {
+        padding: 0;
+    }
+}
+
+body{
+    text-align: center;
+}
+
+#sign-in-pg-img {
+    background-image: url('./tn.jpg');
+}
+
+span {
+    color: green;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+/* |||||||||||||||||| */
+
+
+
+
+
+/* LAYOUT  */
+body {
+    /* background-color: #1C1C1C; */
+    font-family: 'Poppins', 'Smooch Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
